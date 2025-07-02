@@ -1,0 +1,362 @@
+html, body {
+  margin: 0;                    /* Elimina el margen por defecto */
+  padding: 0;                  /* Elimina el padding por defecto */
+}
+body{
+      overflow-x: hidden; /* Evita el scroll horizontal */
+background:linear-gradient(to right, rgb(0, 0, 0), rgb(28, 8, 52)); /* Degradado de fondo */
+}
+
+
+#contenedorencabezado {
+    /*texto*/
+    color: rgb(255, 255, 255);
+    font-size: 96%;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: -2px -1px 4px rgb(0, 0, 0);
+    /*fondo*/
+    background: linear-gradient(rgba(0, 0, 0, 0.691),  rgba(112, 104, 154, 0.594)), url("images/edificio.jpg"); /* Degradado e imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    /*espacio*/
+    display: flex;
+    align-items: center;
+    position: relative;  
+    padding-bottom: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    /*tamaño*/ 
+    height: 60px;   
+    width: 100%;
+    min-height :60px;
+    /*borde*/             
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 255);
+}
+#escudo-superior {
+    /*tamaño*/
+  width: 7vw; 
+  max-width: 120px;
+  /*posicionamiento*/  
+  position: relative; 
+  left: 3vw;
+  top: 12vh;          
+  transform: translateY(-50%); /* Centra verticalmente la imagen */
+  box-shadow: -2px -1px 4px rgb(0, 0, 0);
+}
+#Instituto{
+    /*posicionamiento*/
+    position:relative;
+    align-items: center;
+    transform: translateY(-50%); 
+    left:5vw;
+    top:12vh;
+    line-height: 1.5; /* más espacio entre líneas */
+}
+#personas{ 
+    /*posicionamiento*/
+    position: relative;
+    transform: translateY(-50%);
+    left: 30vw;
+    top: 12vh;
+    line-height: 1.5; /* más espacio entre líneas */
+}
+
+
+.caratula{
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 5%;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+}
+#trabajo h2{
+    /*texto*/
+    color: rgb(255, 255, 255);
+    font-size:80px;
+    /*posicionamiento*/
+    position: relative;
+    margin:0;
+    margin-top:3vw;
+    margin-left: 8vw;
+    /*tamaño*/
+    padding:0;  
+    width: 35vw;
+    height: 30vh;
+}
+#consigna{
+    /*texto*/
+    color: rgb(255, 255, 255);
+    font-size:30px;
+    font-family: 'Share Tech Mono', sans-serif;
+    /*fondo*/
+    background-color:  rgb(0, 0, 0); 
+    /*borde*/
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 2px;  
+    /*posicionamiento*/
+    position : relative;
+    margin:auto;
+    margin-top: 3vw;
+    padding: 1%;
+    padding-bottom: 3%;
+    width: 45vw;
+    height: 40vh;
+    transition: all 0.9s ease; /* para que el cambio sea suave */
+}
+#consigna:hover {
+    /* Efecto cuando poso el cursor*/
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+    border-color: rgb(0, 0, 0);
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del cuadro */
+}
+#materia h6{
+    /*texto*/
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    /*posicionamiento*/
+    position: relative;
+    margin:0;
+    margin-top: 2%;
+    left: 8vw;
+    /*tamaño*/
+    padding:0;
+    width: 32vw;
+    height: 6vh;
+}
+.fuentefuturista{
+    font-family: 'Orbitron', sans-serif;
+    margin:0;
+    padding:0;
+}
+a{
+    color:rgba(255, 255, 255, 0.548);
+    text-decoration: underline; 
+    text-underline-offset: 0.3em; /* Espacio entre el texto y la línea */
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+#asignado {
+    padding:0;
+    margin:0 auto;
+    margin-top: 6%;
+    width: 80vw;
+    height: 50h;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+
+#contenedorgeneral { 
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;            
+  height: 500px;           
+  background-color: rgb(255, 255, 255); 
+  padding: 0;
+  margin: 0%;
+  margin-top: 7%;
+}
+
+#tema h1{   
+    /*necesario para controlar las capas*/
+    position: absolute; /*necesario para z-index*/
+    z-index: 1;   
+    /*posicionamiento*/
+    left:50%;
+    transform: translateX(-50%);
+    top:15%;
+    /*color fondo*/
+    background-color:rgb(57, 41, 133) ;
+    /*texto*/
+    color: rgb(255, 255, 255);
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    /*borde*/
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width:6px;
+    border-radius: 60px;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width:auto;
+} 
+#hombrearriba{
+    /*posicionamiento*/
+    position: relative;
+    margin:1%;
+    /*tamaño*/
+    width: 260px;
+    height: 480px;
+ /*borde*/
+    border-color: rgb(57, 41, 133);
+    border-style: solid;
+}
+#posibles * { /* el * hace que todos los elementos dentro del id se modifquen*/
+    background-color: rgb(13, 0, 27);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Lexend Mega', sans-serif;
+    /*posicionamiento*/
+    position: relative;
+    /*tamaño*/
+    width: 315px;
+    height: 480px;
+    padding-right: 2%;
+    padding-left: 2%;
+    /*borde*/
+    border-color:rgb(57, 41, 133);
+    border-style: solid;
+     /*espaciado entre lineas*/
+    line-height:1.7;
+}
+#mujerabajo{
+    /*borde*/
+    border-color: rgb(57, 41, 133);
+    border-style: solid;
+    /*posicionamiento*/
+    position:relative;
+    margin:1%;
+    /*tamaño*/
+    width: 260px;
+    height: 480px;                                                      
+}
+#consecuencias {
+    background-color:  rgb(13, 0, 27);
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-family: 'Lexend Mega', sans-serif;
+    /*posicionamiento*/
+    position: relative; 
+    /*tamaño*/
+    width: 315px;
+    height: 480px;
+    padding-right: 2%;
+    padding-left: 2%;      
+    /*borde*/
+    border-color: rgb(57, 41, 133);
+    border-style: solid;   
+    /*espaciado entre lineas*/
+    line-height:1.6;
+}
+
+
+.sub-titulos{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Lexend Mega', sans-serif;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 5%;    
+    width: 50%;
+}
+.textocentro{
+    position: relative;
+    width: 90%;
+    margin: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Lexend Mega', sans-serif;
+    line-height: 1.8; /* más espacio entre líneas */
+}
+.contenedorti{
+    display: flex;  
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin:auto;
+}
+.textoizq{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Lexend Mega', sans-serif;
+    line-height: 1.8; /* más espacio entre líneas */
+    width: 55%;
+    margin: 5%;
+    margin-top: 0%;
+}
+#imagentexto{/*imagen en el texto*/
+    position: relative;
+    width: 40%;
+    height: auto;
+   padding:5%;
+}
+.textoder{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Lexend Mega', sans-serif;
+    line-height: 1.8; /* más espacio entre líneas */
+    width: 55%;
+    padding: 5%;
+    margin: auto;
+}
+
+#contenedorfooter{
+/*texto*/
+    color: rgb(255, 255, 255);
+    font-size: 96%;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: -2px -1px 4px rgb(0, 0, 0);
+    /*fondo*/
+    background: linear-gradient(rgb(29, 27, 27),  rgb(69, 63, 63)); /* Degradado */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-blend-mode:luminosity;
+    /*espacio*/
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    gap:25%;
+    margin-top:5%;
+    padding-bottom: 60px;
+    padding-left: 1px;
+    padding-right: 1px;
+    /*tamaño*/ 
+    height: 20vh;   
+    width: 100%;
+    min-height :60px;
+    /*borde*/             
+    border-top-style: solid;
+    border-top-color: rgb(255, 255, 255);
+}
+#escudo-inferior{
+    /*tamaño*/
+  width: 7vw; 
+  max-width: 120px;
+  margin: 5%;
+  /*posicionamiento*/  
+  position: relative; 
+  left: 3vw;
+  top: 50%;          
+  transform: translateY(-50%); /* Centra verticalmente la imagen */
+  box-shadow: -2px -1px 4px rgb(0, 0, 0);
+}
+
+.info{  
+    position: relative;    
+    width: 20vw;
+    height: 10vh;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.titulito{
+    color:grey;
+    height: 8vh;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
